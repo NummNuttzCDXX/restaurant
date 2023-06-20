@@ -1,5 +1,7 @@
 // Main Header Module
 
+import burgImg from '../img/burg-steamy.jpg'
+
 export const createHeader = function () {
     const header = document.createElement('header');
     const heading = document.createElement('h1');
@@ -7,6 +9,11 @@ export const createHeader = function () {
 
     heading.textContent = "Big Brehn's Beef Burgs";
     header.appendChild(heading);
+
+    // Add Img
+    const img = new Image();
+    img.src = burgImg;
+    header.appendChild(img);
 
     desc.innerHTML = "Are you feeling famished for some delicious beef? <br>" + 
         "The kind of beef that makes you realize you've been missing out your entire life? <br>" + 
