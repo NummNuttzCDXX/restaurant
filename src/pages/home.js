@@ -1,5 +1,5 @@
 // Initial Home Page File
-
+	import githubIcon from '../img/github-mark-white.svg';
 // Main Header Module
 const createHeader = function () {
     const header = document.createElement('header');
@@ -38,8 +38,28 @@ const createBody = function () {
     main.appendChild(desc);
 }
 
+const createFooter = function () {
+	const foot = document.createElement('footer');
+	const link = document.createElement('a');
+
+	// Add signature
+	foot.innerHTML = 'NummNuttzCDXX';
+
+	// Add github Icon
+	const reposIcon = new Image();
+	reposIcon.src = githubIcon;
+	link.appendChild(reposIcon);
+	link.href = 'https://github.com/NummNuttzCDXX/restaurant';
+
+	foot.appendChild(link);
+
+	return foot;
+}
+
+// Create whole page
 export const createHome = function () {
     const body = document.querySelector('body');
     body.prepend(createHeader());
     createBody();
+	body.appendChild(createFooter());
 }
