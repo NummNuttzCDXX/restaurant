@@ -44,6 +44,8 @@ header button.active {
 }
 
 footer {
+	margin-bottom: 2px;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -53,8 +55,17 @@ footer {
 
 footer img {
 	width: 28px;
+	margin: 1px;
+
+	transform: rotate(-1turn);
+    transition: .5s;
 }
 
 footer a {
 	margin-left: 10px;
+}
+
+footer img:hover {
+    transform: rotate(1turn) scale(1.1);
+    transition: .5s;
 }
