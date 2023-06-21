@@ -6,12 +6,10 @@ body {
     display: flex;
     flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 
-    background: url(../src/img/burg-steamy.jpg);
-    background-size: 50vw 100vh;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-color: #A1011D;
+	background: linear-gradient(to right bottom, rgb(49, 0, 62), rgb(255, 0, 93));
+	color: rgb(253, 0, 164);
 }
 
 header {
@@ -40,12 +38,20 @@ header button.active {
 }
 
 #content {
+	width: 40%;
+	height: 100%;
+
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+
+	text-align: center;
+	font-size: 1.2rem;
 }
 
 #content p {
-	width: 49vw;
+	width: 100%;
+	height: auto;
 }
 
 footer {
