@@ -1,8 +1,11 @@
 body {
+	margin: 0;
 	font-size: 18px;
+	height: 100vh;
 
     display: flex;
     flex-direction: column;
+	justify-content: space-between;
 
     background: url(../src/img/burg-steamy.jpg);
     background-size: 50vw 100vh;
@@ -29,4 +32,29 @@ header button {
 /* Add active class when :active */
 header button.active {
 	border-bottom: 2px solid black;
+}
+
+#content {
+	display: flex;
+	justify-content: center;
+}
+
+#content p {
+	width: 49vw;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 1.2rem;
+}
+
+footer img {
+	width: 28px;
+}
+
+footer a {
+	margin-left: 10px;
 }
