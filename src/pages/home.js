@@ -1,3 +1,5 @@
+// Initial Home Page File
+
 // Main Header Module
 
 import burgImg from '../img/burg-steamy.jpg'
