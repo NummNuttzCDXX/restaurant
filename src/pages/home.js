@@ -36,6 +36,18 @@ const createBody = function () {
         "The kind of beef that makes you realize you've been missing out your entire life? <br>" + 
         "Well you're in luck! Here at Big Brehns Beef Burgs we only serve the best of the best of burgs.";
     main.appendChild(desc);
+
+	// Tagline
+	const tag = document.createElement('p')
+	tag.classList.add('tagline');
+	tag.textContent = 'Come on down to Big Brehn\'s Beef Burgs, where all you\'re beefy desires are cured';
+	main.appendChild(tag);
+
+	// Motto
+	const motto = document.createElement('h2');
+	motto.classList.add('motto');
+	motto.textContent = 'We have the beefs!';
+	main.appendChild(motto)
 }
 
 const createFooter = function () {
