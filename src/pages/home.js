@@ -5,8 +5,25 @@ const createHeader = function () {
     const header = document.createElement('header');
     const heading = document.createElement('h1');
 
+    // Title Text
     heading.textContent = "Big Brehn's Beef Burgs";
     header.appendChild(heading);
+
+    // Tabs
+    const homeBtn = document.createElement('button'),
+    menuBtn = document.createElement('button'),
+    contactBtn = document.createElement('button'),
+    btnContainer = document.createElement('div');
+
+    homeBtn.textContent = 'Home';
+    menuBtn.textContent = 'Menu';
+    contactBtn.textContent = 'Contact';
+
+    btnContainer.appendChild(homeBtn);
+    btnContainer.appendChild(menuBtn);
+    btnContainer.appendChild(contactBtn);
+
+    header.appendChild(btnContainer);
 
     return header;
 }
