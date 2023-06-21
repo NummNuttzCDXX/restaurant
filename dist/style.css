@@ -55,6 +55,7 @@ footer {
 
 footer img {
 	width: 28px;
+	background-color: black;
 	margin: 1px;
 
 	transform: rotate(-1turn);
