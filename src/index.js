@@ -1,6 +1,6 @@
 // Main JS Script
 // Imports
-import { createHeader } from "./pages/header";
+import { createHeader } from "./pages/home";
 
 // Declare Vars
 const main = document.querySelector('div#content');
