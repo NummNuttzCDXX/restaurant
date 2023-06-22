@@ -1,5 +1,6 @@
 // Initial Home Page File
 	import githubIcon from '../img/github-mark-white.svg';
+	import burger from '../img/burg-steamy.jpg';
 // Main Header Module
 const createHeader = function () {
     const header = document.createElement('header');
@@ -48,6 +49,11 @@ const createBody = function () {
 	motto.classList.add('motto');
 	motto.textContent = 'We have the beefs!';
 	main.appendChild(motto)
+
+	// Add image
+	const burg = new Image();
+	burg.src = burger;
+	main.appendChild(burg);
 }
 
 const createFooter = function () {
