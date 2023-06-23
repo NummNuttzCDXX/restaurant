@@ -1,9 +1,19 @@
 // Main JS Script
 // Imports
-import { createHome } from "./pages/home";
+import { createHome as home} from "./pages/home";
 
-// Declare Vars
-const main = document.querySelector('div#content');
+// Create/Add home page to doc
+home()
 
-// Create/Add header to doc
-createHome()
+// Tab switching
+const tabBtns = document.querySelectorAll('header button');
+
+tabBtns.forEach(btn => {
+	btn.addEventListener('click', () => {
+		// var = btn class which is the name of the function that loads the page
+		let tab = btn.className;
+		
+		// eval lets you run the function name which is saved as a string inside tab
+		eval(tab + '()')
+	})
+})
