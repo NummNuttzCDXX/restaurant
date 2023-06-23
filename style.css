@@ -48,9 +48,7 @@ header button.active {
 }
 
 #content {
-	--height: 100%;
 	width: 100%;
-	height: var(--height);
 	background: linear-gradient(to right bottom, rgb(49, 0, 62), rgb(255, 0, 93));
 
 	flex-grow: 1;
@@ -75,9 +73,9 @@ header button.active {
 #content img {
 	position: absolute;
 	top: calc(calc(var(--height) - 40vw) / 2);  /* Takes container height - img height to get the extra space then divides it by 2 to put it in middle*/
-	left: 0;
-	width: 30vw;
-	height: 40vw;
+	left: 1vw;
+	width: 25vw;
+	height: 35vw;
 }
 
 footer {
