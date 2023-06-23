@@ -16,9 +16,13 @@ const createHeader = function () {
     contactBtn = document.createElement('button'),
     btnContainer = document.createElement('div');
 
+	// Set button text and add class
     homeBtn.textContent = 'Home';
+	homeBtn.classList.add('home')
     menuBtn.textContent = 'Menu';
+	menuBtn.classList.add('menu')
     contactBtn.textContent = 'Contact';
+	contactBtn.classList.add('contact')
 
     btnContainer.appendChild(homeBtn);
     btnContainer.appendChild(menuBtn);
