@@ -1,19 +1,30 @@
 // Main JS Script
 // Imports
-import { createHome as home} from "./pages/home";
+import { createHome as home, createBody as body } from "./pages/home";
 
-// Create/Add home page to doc
-home()
+// Create/Load initial Home Page
+home();
 
 // Tab switching
 const tabBtns = document.querySelectorAll('header button');
+const content = Array.from(document.querySelector('#content').children);
 
 tabBtns.forEach(btn => {
 	btn.addEventListener('click', () => {
-		// var = btn class which is the name of the function that loads the page
-		let tab = btn.className;
+		// Remove all content children
+		content.forEach(element => {
+			element.remove()
+		})
+
+		const tab = btn.className;
 		
-		// eval lets you run the function name which is saved as a string inside tab
-		eval(tab + '()')
-	})
-})
+		// Check tab and load New Content
+		if (tab === 'home') {
+			body();
+		} else if (tab === 'menu') {
+			menu();
+		} else if (tab === 'contact') {
+			contact()
+		};
+	});
+});
