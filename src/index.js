@@ -1,6 +1,7 @@
 // Main JS Script
 // Imports
 import { createHome as home, createBody as body } from "./pages/home";
+import { createMenu as menu } from "./pages/menu";
 
 // Create/Load initial Home Page
 home();
