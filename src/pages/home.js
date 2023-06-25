@@ -57,6 +57,7 @@ export const createBody = function () {
 
 	// Add image
 	const burg = new Image();
+	burg.classList.add('advertise')
 	burg.src = burger;
 	main.appendChild(burg);
 }
