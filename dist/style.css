@@ -70,7 +70,8 @@ header button.active {
 	font-weight: 600;
 }
 
-#content img {
+/* Initial burger img -- Home Page */
+#content img.advertise {
 	position: absolute;
 	top: calc(calc(var(--height) - 40vw) / 2);  /* Takes container height - img height to get the extra space then divides it by 2 to put it in middle*/
 	left: 1vw;
