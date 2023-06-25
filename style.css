@@ -79,6 +79,12 @@ header button.active {
 	height: 35vw;
 }
 
+/* Menu Img's */
+#content img {
+	width: 15vw;
+	height: 15vw;
+}
+
 footer {
 	width: 100%;
 	padding-bottom: 2px;
