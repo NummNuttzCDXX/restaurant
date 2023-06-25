@@ -19,7 +19,7 @@ const createHeader = function () {
 
 	// Set button text and add class
     homeBtn.textContent = 'Home';
-	homeBtn.classList.add('home')
+	homeBtn.classList.add('home', 'active')
     menuBtn.textContent = 'Menu';
 	menuBtn.classList.add('menu')
     contactBtn.textContent = 'Contact';
