@@ -63,56 +63,24 @@ export function createMenu() {
 
 	// Menu
 	// Item 1
-	const itemContainer1 = document.createElement('div');
-	itemContainer1.classList.add('item');
-	
-	const doubleBurg = new Image();
-	doubleBurg.src = double;
-	itemContainer1.appendChild(doubleBurg);
-
-	// Create container to hold the Text info
-	const descContainer = document.createElement('div');
-	descContainer.classList.add('description-container')
-
-	// Create item Heading
-	const doubleTxt = document.createElement('h3');
-	doubleTxt.classList.add('item-heading')
-	doubleTxt.textContent = 'Double Cheeseburger';
-	descContainer.appendChild(doubleTxt);
-
-	// Create item Description
-	const doubleDesc = document.createElement('p');
-	doubleDesc.classList.add('description')
-	doubleDesc.textContent = 'An all American double cheeseburger, topped with a sesame seed bun, lettuce, tomato, onions, and mayo.';
-	descContainer.appendChild(doubleDesc);
-
-	// Create Price
-	const doublePrice = document.createElement('p');
-	doublePrice.classList.add('price');
-	doublePrice.textContent = '$8.99';
-	
-	// Add containers to doc
-	itemContainer1.appendChild(descContainer);
-	itemContainer1.appendChild(doublePrice);
-	menuContainer.appendChild(itemContainer1);
+	let doubleDesc = 'An all American double cheeseburger, topped with a sesame seed bun, lettuce, tomato, onions, and mayo.';
+	addItem(double, 'Double Cheeseburg', doubleDesc, '$8.99');
 
 	// Item 2
-	// const bbqBurg = new Image();
-	// bbqBurg.src = bbq;
-	let bbqDesc = 'The perfect burger with bacon and sweet barbecue sauce to top it off';
-	addItem(bbq, 'BBQ Burger', bbqDesc, '$10.99');
+	let bbqDesc = 'The perfect burger with bacon, sweet barbecue sauce, and onion rings. As if it couldn\'t get any better it\'s a double!';
+	addItem(bbq, 'BBQ Burg', bbqDesc, '$10.99');
 
 	// Item 3
-	const dogBurg = new Image();
-	dogBurg.src = burgDog;
+	let dogDesc = 'Have you ever had a hotdog and wished that it was a burger? Try our new Burger Dog! It\'s the best of both worlds!';
+	addItem(burgDog, 'Burger Dog', dogDesc, '$7.99');
 
 	// Item 4
-	const macBurg = new Image();
-	macBurg.src = baconMac;
+	let macBurgDesc = 'Original beef burg topped with bacon and mac n cheese ... YUM';
+	addItem(baconMac, 'Bacon Mac n Cheese Burg', macBurgDesc, '$10.99')
 
 	// Item 5
-	const fry = new Image();
-	fry.src = fries;
+	let fryDesc = 'All time fan favorite seasoned french fries';
+	addItem(fries, 'Seasoned French Fries', fryDesc, '$2.99');
 
 	// Add Menu-Container to parent
 	parentContainer.appendChild(menuContainer);
