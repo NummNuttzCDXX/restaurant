@@ -7,14 +7,21 @@ import double from '../img/double.jpg';
 import fries from '../img/fries.jpg';
 
 export function createMenu() {
+	// Create Elements
 	const content = document.querySelector('#content');
-	const container = document.createElement('div');
-	container.classList.add('menu-container');
+	const parentContainer = document.createElement('div');
+	parentContainer.classList.add('menu-parent');
+	const menuContainer = document.createElement('div');
+	menuContainer.classList.add('menu-container');
+
+	// Add parent to doc
+	content.appendChild(parentContainer);
 
 	// Heading
 	const menuHead = document.createElement('h2');
+	menuHead.classList.add('menu-heading')
 	menuHead.textContent = 'Menu';
-	content.appendChild(menuHead);
+	parentContainer.appendChild(menuHead);
 
 	// Menu
 	// Item 1
@@ -24,12 +31,33 @@ export function createMenu() {
 	const doubleBurg = new Image();
 	doubleBurg.src = double;
 	itemContainer1.appendChild(doubleBurg);
-	
-	const doubleTxt = document.createElement('p');
-	doubleTxt.textContent = 'Double Cheeseburger';
-	itemContainer1.appendChild(doubleTxt);
 
-	container.appendChild(itemContainer1);
+	// Create container to hold the Text info
+	const descContainer = document.createElement('div');
+	descContainer.classList.add('description-container')
+
+	// Create item Heading
+	const doubleTxt = document.createElement('h3');
+	doubleTxt.classList.add('item-heading')
+	doubleTxt.textContent = 'Double Cheeseburger';
+	descContainer.appendChild(doubleTxt);
+
+	// Create item Description
+	const doubleDesc = document.createElement('p');
+	doubleDesc.classList.add('description')
+	doubleDesc.textContent = 'An all American double cheeseburger, topped with a sesame seed bun, lettuce, tomato, onions, and mayo.';
+	descContainer.appendChild(doubleDesc);
+
+	// Create Price
+	const doublePrice = document.createElement('p');
+	doublePrice.classList.add('price');
+	doublePrice.textContent = '$8.99';
+	
+	// Add containers to doc
+	itemContainer1.appendChild(descContainer);
+	itemContainer1.appendChild(doublePrice);
+	menuContainer.appendChild(itemContainer1);
+
 	// Item 2
 	const bbqBurg = new Image();
 	bbqBurg.src = bbq;
@@ -46,8 +74,8 @@ export function createMenu() {
 	const fry = new Image();
 	fry.src = fries;
 
-	// Add Menu-Container to content
-	content.appendChild(container);
+	// Add Menu-Container to parent
+	parentContainer.appendChild(menuContainer);
 }
 
 // Double attribute
