@@ -37,6 +37,7 @@ const createHeader = function () {
 export const createBody = function () {
     const main = document.querySelector('div#content');
     const desc = document.createElement('p');
+	desc.classList.add('hook');
     
     desc.innerHTML = "Are you feeling famished for some delicious beef? <br>" + 
         "The kind of beef that makes you realize you've been missing out your entire life? <br>" + 
