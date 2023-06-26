@@ -105,6 +105,7 @@ header button.active {
 
 .menu-container .item {
 	display: flex;
+	margin-top: 20px;
 }
 
 .item img {
@@ -125,6 +126,7 @@ header button.active {
 .item .price {
 	color: rgb(49, 0, 62);
 	margin-right: 10px;
+	margin-left: auto;
 }
 
 /* Menu Img's */
