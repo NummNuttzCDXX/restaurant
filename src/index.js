@@ -2,6 +2,7 @@
 // Imports
 import { createHome as home, createBody as body } from "./pages/home";
 import { createMenu as menu } from "./pages/menu";
+import { createContact as contact } from "./pages/contact";
 
 // Create/Load initial Home Page
 home();
