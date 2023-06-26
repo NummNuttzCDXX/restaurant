@@ -8,19 +8,28 @@ export function createContact() {
 	// Heading
 	const head = document.createElement('h2');
 	head.textContent = 'Contact Us';
-	content.appendChild(head);
+	container.appendChild(head);
 
 	// Address
 	const address = document.createElement('p');
+	address.textContent = '1234 NotAFake Rd YourCity, State';
+	container.appendChild(address);
 
 	// Hours
 	const hours = document.createElement('p');
+	hours.textContent = 'Everyday: 7am-11pm'
+	container.appendChild(hours);
 
 	// Phone
 	const phone = document.createElement('p');
+	phone.textContent = '(555)555-5555';
+	container.appendChild(phone);
 
 	// Email
 	const mail = document.createElement('p');
+	mail.textContent = 'definitelyRealEmail@notFake.com';
+	container.appendChild(mail);
 
-	// Embed Map?
+	// Add Container
+	content.appendChild(container);
 }
