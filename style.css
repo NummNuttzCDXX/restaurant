@@ -93,6 +93,20 @@ header button.active {
 	border-radius: 12px;
 }
 
+.menu-heading {
+	position: relative;
+}
+
+.menu-heading::after {
+	content: 'All burgs served with side of Seasoned French Fries';
+	position: absolute;
+	top: 0;
+	right: 5px;
+
+	font-size: 1rem;
+	color: rgb(49, 0, 62);
+}
+
 .menu-parent .menu-heading {
 	margin: 0;
 	align-self: center;
