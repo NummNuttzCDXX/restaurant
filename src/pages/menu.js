@@ -97,8 +97,10 @@ export function createMenu() {
 	menuContainer.appendChild(itemContainer1);
 
 	// Item 2
-	const bbqBurg = new Image();
-	bbqBurg.src = bbq;
+	// const bbqBurg = new Image();
+	// bbqBurg.src = bbq;
+	let bbqDesc = 'The perfect burger with bacon and sweet barbecue sauce to top it off';
+	addItem(bbq, 'BBQ Burger', bbqDesc, '$10.99');
 
 	// Item 3
 	const dogBurg = new Image();
