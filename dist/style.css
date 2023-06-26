@@ -65,8 +65,8 @@ header button.active {
 	position: relative;
 }
 
-#content p, h2 {
-	width: 40%;
+#content .hook, #content .tagline, #content .motto {
+	width: 50%;
 	height: auto;
 	color: rgb(49, 0, 62);
 	font-weight: 600;
@@ -79,6 +79,48 @@ header button.active {
 	left: 1vw;
 	width: 25vw;
 	height: 35vw;
+}
+
+/* Container holding menu */
+.menu-parent {
+	width: 100%;
+	height: 100%;
+
+	display: grid;
+	grid-template-rows: 6vw repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.menu-parent .menu-heading {
+	margin: 0;
+	align-self: center;
+}
+
+.menu-container {
+	width: 100%;
+	height: 100%;
+}
+
+.menu-container .item {
+	display: flex;
+}
+
+.item img {
+	margin-right: 30px;
+}
+
+/* Food Item Head */
+.item-heading {
+	text-align: start;
+}
+
+.item .description {
+	color: rgb(49, 0, 62);
+	font-weight: 600;
+	text-align: start;
+}
+
+.item .price {
+	color: rgb(49, 0, 62);
 }
 
 /* Menu Img's */
