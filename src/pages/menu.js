@@ -23,6 +23,44 @@ export function createMenu() {
 	menuHead.textContent = 'Menu';
 	parentContainer.appendChild(menuHead);
 
+	// Create function to add/create items
+	function addItem(img, head, desc, price) {
+		// Create Item Container
+		const itemContainer = document.createElement('div');
+		itemContainer.classList.add('item');
+
+		// Create/add image
+		const image = new Image();
+		image.src = img;
+		itemContainer.appendChild(image);
+
+		// Create container to hold the Text info
+		const descContainer = document.createElement('div');
+		descContainer.classList.add('description-container')
+
+		// Create item Heading
+		const itemHead = document.createElement('h3');
+		itemHead.classList.add('item-heading')
+		itemHead.textContent = head;
+		descContainer.appendChild(itemHead);
+
+		// Create item Description
+		const description = document.createElement('p');
+		description.classList.add('description')
+		description.textContent = desc;
+		descContainer.appendChild(description);
+
+		// Create Price
+		const itemPrice = document.createElement('p');
+		itemPrice.classList.add('price');
+		itemPrice.textContent = price;
+
+		// Add containers to doc
+		itemContainer.appendChild(descContainer);
+		itemContainer.appendChild(itemPrice);
+		menuContainer.appendChild(itemContainer);
+	}
+
 	// Menu
 	// Item 1
 	const itemContainer1 = document.createElement('div');
