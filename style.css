@@ -122,13 +122,13 @@ header button.active {
 	margin: 20px;
 }
 
-.item img {
-	margin-right: 30px;
-}
-
 /* Food Item Head */
 .item-heading {
 	text-align: start;
+}
+
+.item {
+	position: relative;
 }
 
 .item .description {
@@ -144,9 +144,20 @@ header button.active {
 }
 
 /* Menu Img's */
-#content img {
+.item img {
+	margin-right: 30px;
 	width: 15vw;
 	height: 15vw;
+}
+
+/* Add credit to images */
+.item a {
+	position: absolute;
+	bottom: -17px;
+	left: 10px;
+
+	font-size: 1rem;
+	color: rgb(49, 0, 62);
 }
 
 footer {
