@@ -1,6 +1,6 @@
 // Initial Home Page File
-	import githubIcon from '../img/github-mark-white.svg';
-	import burger from '../img/burg-steamy.jpg';
+import githubIcon from '../img/github-mark-white.svg';
+import burger from '../img/burg-steamy.jpg';
 
 // Main Header Module
 const createHeader = function () {

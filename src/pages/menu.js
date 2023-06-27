@@ -107,8 +107,3 @@ export function createMenu() {
 	// Add Menu-Container to parent
 	parentContainer.appendChild(menuContainer);
 }
-
-// Double attribute
-// <a href="https://www.freepik.com/free-ai-image/double-hamburger-isolated-white-background-fresh-burger-fast-food-with-beef-cream-cheese_39518159.htm?log-in=google">Image By svstudioart</a>
-// Fries
-// <a href="https://www.freepik.com/free-photo/side-view-french-fries-with-seasoning_8196330.htm#query=french%20fries&position=6&from_view=search&track=ais">Image by stockking</a> on Freepik
