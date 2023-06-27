@@ -81,6 +81,7 @@ header button.active {
 	height: 35vw;
 }
 
+/* Menu */
 /* Container holding menu */
 .menu-parent {
 	width: 100%;
@@ -158,6 +159,45 @@ header button.active {
 
 	font-size: 1rem;
 	color: rgb(49, 0, 62);
+}
+
+/* Contact */
+#contact-container {
+	width: 100%;
+	min-width: fit-content;
+	
+	margin: 50px;
+	
+	background-color: rgba(25, 105, 255, 0.51);
+	border-radius: 12px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* Contact Headings */
+#contact-container h3 {
+	width: fit-content;
+	margin-bottom: 0;
+	border-bottom: 2px solid rgb(253, 0, 164);
+}
+
+#contact-container h2 {
+	border-bottom: 2px solid rgb(253, 0, 164);
+}
+
+#contact-container p {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+/* Individual contact info containers */
+#contact-container div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 footer {
