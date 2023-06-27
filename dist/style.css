@@ -73,8 +73,12 @@ header button.active {
 #content .hook, #content .tagline, #content .motto {
 	width: 50%;
 	height: auto;
-	color: rgb(49, 0, 62);
+	padding: 10px;
+
 	font-weight: 600;
+	color: rgb(49, 0, 62);
+	background-color: rgba(25, 105, 255, 0.51);
+	border-radius: 8px;
 }
 
 /* Initial burger img -- Home Page */
