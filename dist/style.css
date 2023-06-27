@@ -36,15 +36,20 @@ header button {
     margin-left: 10px;
 	font-size: 1.2rem;
 
+	cursor: pointer;
     appearance: none;
     border: none;
 	background-color: rgba(255, 255, 255, 0);
 	color: rgb(253, 0, 164);
 }
 
+header button:hover {
+	color: rgba(25, 105, 255, 1);
+}
+
 /* Add active class when :active */
 header button.active {
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid rgba(25, 105, 255, 1);
 }
 
 #content {
